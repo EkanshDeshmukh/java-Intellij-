@@ -7,6 +7,8 @@ public class BicycleClient {
       Bicycle sportCycle = new Bicycle();
       System.out.println(sportCycle.getGear());
       sportCycle.braking();
+      sportCycle.setGear(20);
+      System.out.println(sportCycle.getGear());
   }
 
 }

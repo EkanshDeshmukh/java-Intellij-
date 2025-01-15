@@ -8,7 +8,9 @@ public class Bicycle {
     public int getGear() {
         return gear;
     }
-
+    public void setGear(int gear){
+        this.gear = gear;
+    }
     //behaviour or method
     public static void braking (){
         System.out.println("brakinggggg");
