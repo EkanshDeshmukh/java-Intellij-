@@ -2,20 +2,18 @@ package OOPS;
 
 public class Bicycle {
 
-    // state of a field
+    //state of a field
     private int gear = 5;
-
-    // getter for the gear field
+    // Getter method for gear
     public int getGear() {
         return gear;
     }
 
-    // behavior or method
-    public static void braking() {
-        System.out.println("breakiiiing");
+    //behaviour or method
+    public static void braking (){
+        System.out.println("brakinggggg");
     }
-
-    public static void main(String[] args) {
+    public static void main(String str[]){
         braking();
     }
 }
