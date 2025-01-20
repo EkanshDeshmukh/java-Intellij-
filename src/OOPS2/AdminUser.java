@@ -11,12 +11,17 @@ public class AdminUser extends User {
 
     @Override
     public void showDashboard(   ) {
+        super.showDashboard();
          System.out.println( " Admin user specialized dashboard");
+    }
+    public void updateUsername(String username){
+        System.out.println(username + " updated username");
     }
 
     public static void main(String[] args) {
         AdminUser au = new AdminUser("ekansh" , "ekansh@gmail.com");
         au.login();
         au.showDashboard();
+        au.updateUsername("Ekansh Deshmukh");
     }
 }
