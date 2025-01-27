@@ -7,7 +7,7 @@ public class Inheritance {
     shark.breathe();
     }
 }
-//baes class
+//base class
 class Animal{
     String color;
     void eat(){
@@ -17,7 +17,7 @@ class Animal{
         System.out.println("breathe");
     }
 }
-
+//derived class
 class Fish extends Animal{
     int fins;
     void swim(){
