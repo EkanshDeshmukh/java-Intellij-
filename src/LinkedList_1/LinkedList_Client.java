@@ -14,5 +14,9 @@ public class LinkedList_Client {
         ll.removeLast();
         ll.removeAt(2);
         ll.display();
+        ll.addFirst(80);
+        ll.addFirst(0);
+        ll.removeAt(2);
+        ll.display();
     }
 }
