@@ -30,6 +30,14 @@ public class LinkedList{
         this.head = nn;
 
     }
+    public void addLast(int data){
+        Node nn = new Node(data);
+        Node temp = this.head;
+        while(temp.next != null){
+            temp = temp.next;
+        }
+        temp.next = nn;
+    }
     public void addAt(int data,int idx){
         if(idx < 0) return;
         if(idx == 0){
@@ -47,6 +55,7 @@ public class LinkedList{
         temp.next = nn;
         nn.next = forward;
     }
+
     public int removeFirst(){
         if(this.head == null) return -1;
         int rv = this.head.data;
