@@ -12,5 +12,9 @@ public class BinarytreeClient {
         b.inorder(b.root);
         System.out.println("----");
         b.preorder(b.root);
+        System.out.println("----");
+        System.out.println(b.find(b.root,200));
+        System.out.println("----");
+        System.out.println(b.height(b.root));
     }
 }

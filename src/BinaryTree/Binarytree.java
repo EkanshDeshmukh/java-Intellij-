@@ -14,4 +14,24 @@ public class Binarytree {
             preorder(root.left);
             preorder(root.right);
         }
+        public boolean find(Node root , int val){
+            if (root == null){
+                return false;
+            }
+            if(root.data == val){
+                return true;
+            }
+             boolean lf =  find(root.left,val);
+            boolean rf =  find(root.right,val);
+            return lf || rf;
+        }
+        public int height(Node root){
+            if(root == null){
+                return  -1;
+            }
+            int lh = height(root.left);
+            int rh = height(root.right);
+            return Math.max(lh,rh) + 1;
+        }
+
 }
